@@ -57,20 +57,19 @@ export function LogoMark({ variant = 'dark', className }: LogoMarkProps) {
   
   return (
     <svg
-      viewBox="0 0 120 24"
+      viewBox="0 0 170 24"
       className={cn('h-5 w-auto', className)}
       fill={color}
     >
-      {/* Clean wordmark placeholder */}
       <text
         x="0"
-        y="17"
-        fontFamily="IBM Plex Sans, sans-serif"
-        fontSize="14"
-        fontWeight="600"
-        letterSpacing="0.05em"
+        y="18"
+        fontFamily="Syne, 'Plus Jakarta Sans', sans-serif"
+        fontSize="18"
+        fontWeight="800"
+        letterSpacing="0.02em"
       >
-        SLIDEFORGE
+        FORFEITNESS
       </text>
     </svg>
   );
