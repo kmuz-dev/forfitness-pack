@@ -319,3 +319,109 @@
 .animate-collapse {
   animation: collapseIn 0.2s ease-out forwards;
 }
+
+/* ============================================================
+   FORFEITNESS BRAND — scoped to slide content only
+   App chrome (toolbar/sidebar) keeps its existing tokens.
+   ============================================================ */
+.slide-content {
+  /* Override slide design tokens with Forfeitness palette */
+  --slide-primary: 0 0% 6%;              /* brand-black */
+  --slide-primary-light: 0 0% 18%;
+  --slide-accent: 152 60% 28%;           /* deep energetic forest/lime */
+  --slide-accent-light: 152 50% 42%;
+  --slide-accent-muted: 152 38% 92%;
+  --slide-bg: 60 14% 97%;                /* warm off-white */
+  --slide-forfeit: 8 76% 55%;            /* forfeit red */
+  --slide-warning: 38 92% 55%;
+  --slide-success: 152 60% 28%;
+
+  /* Re-tone neutral grays toward warm */
+  --slide-gray-100: 60 10% 95%;
+  --slide-gray-200: 60 8% 90%;
+  --slide-gray-300: 60 6% 82%;
+  --slide-gray-400: 60 5% 62%;
+  --slide-gray-500: 60 5% 46%;
+  --slide-gray-600: 60 6% 32%;
+  --slide-gray-700: 60 8% 22%;
+  --slide-gray-800: 0 0% 12%;
+  --slide-gray-900: 0 0% 6%;
+
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: 0;
+}
+
+/* Headings + numerals → Syne, tight tracking */
+.slide-content h1,
+.slide-content h2,
+.slide-content h3,
+.slide-content h4,
+.slide-content .font-display,
+.slide-content .type-display,
+.slide-content .type-h1,
+.slide-content .type-h2,
+.slide-content .type-h3,
+.slide-content .type-metric,
+.slide-content .fs-numeral {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-feature-settings: 'tnum' 1;
+}
+
+/* ---- Forfeitness utility classes (slide-only) ---- */
+.slide-content .fs-eyebrow {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: hsl(var(--slide-gray-500));
+}
+.slide-content .fs-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background: hsl(var(--slide-accent-muted));
+  color: hsl(var(--slide-accent));
+}
+.slide-content .fs-pill-dark {
+  background: hsl(var(--slide-primary));
+  color: hsl(var(--slide-bg));
+}
+.slide-content .fs-pill-forfeit {
+  background: hsl(var(--slide-forfeit) / 0.12);
+  color: hsl(var(--slide-forfeit));
+}
+.slide-content .fs-card {
+  background: #ffffff;
+  border: 1px solid hsl(var(--slide-gray-200));
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
+}
+.slide-content .fs-card-dark {
+  background: hsl(0 0% 10%);
+  border: 1px solid hsl(0 0% 18%);
+  border-radius: 28px;
+  padding: 32px;
+  color: hsl(var(--slide-bg));
+}
+.slide-content .fs-stat {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  line-height: 0.95;
+}
+.slide-content .fs-divider-lime {
+  width: 96px;
+  height: 6px;
+  background: hsl(var(--slide-accent));
+  border-radius: 9999px;
+}
