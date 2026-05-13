@@ -1,6 +1,6 @@
 import React from 'react';
 import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
-import { Check, ArrowUpRight } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 function PhoneMock() {
   return (
