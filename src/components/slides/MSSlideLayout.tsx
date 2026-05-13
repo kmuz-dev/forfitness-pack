@@ -57,17 +57,18 @@ export function LogoMark({ variant = 'dark', className }: LogoMarkProps) {
   
   return (
     <svg
-      viewBox="0 0 170 24"
-      className={cn('h-5 w-auto', className)}
+      viewBox="0 0 200 28"
+      className={cn('h-6 w-auto', className)}
       fill={color}
+      preserveAspectRatio="xMaxYMid meet"
     >
       <text
         x="0"
-        y="18"
+        y="22"
         fontFamily="Syne, 'Plus Jakarta Sans', sans-serif"
-        fontSize="18"
+        fontSize="20"
         fontWeight="800"
-        letterSpacing="0.02em"
+        letterSpacing="0.04em"
       >
         FORFEITNESS
       </text>
