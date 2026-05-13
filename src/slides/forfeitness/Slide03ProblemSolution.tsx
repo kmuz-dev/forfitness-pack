@@ -68,7 +68,7 @@ export default function Slide03ProblemSolution() {
                 </LineChart>
               </ResponsiveContainer>
             </div>
-            <span style={{ fontSize: 18, color: 'hsl(var(--slide-gray-500))' }}>Sessions/week — gym membership goes unused.</span>
+            <span style={{ fontSize: 18, color: 'hsl(var(--slide-gray-500))' }}>Sessions per week; gym membership goes unused.</span>
           </div>
         </div>
 

@@ -4,7 +4,7 @@ import { Megaphone, Users, Building2, Activity } from 'lucide-react';
 
 const channels = [
   { icon: Megaphone, title: 'Organic social', body: 'TikTok + Instagram UGC, relatable "skip" content drives top of funnel.' },
-  { icon: Users, title: 'Founder-seeded pods', body: 'Hand-picked friend groups in London and Manchester — seed the network.' },
+  { icon: Users, title: 'Founder-seeded pods', body: 'Hand-picked friend groups in London and Manchester to seed the network.' },
   { icon: Building2, title: 'Gyms & run clubs', body: 'Partnerships, in-app referral codes, branded leaderboards.' },
   { icon: Activity, title: 'Strava / Apple Health', body: 'Distribution inside apps users already open daily.' },
 ];

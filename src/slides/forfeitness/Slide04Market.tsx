@@ -50,7 +50,7 @@ export default function Slide04Market() {
         <div className="grid grid-cols-12 gap-6 flex-1 min-h-0">
           {/* TAM/SAM/SOM */}
           <div className="col-span-5 fs-card flex flex-col gap-4" style={{ padding: 28 }}>
-            <span className="fs-eyebrow" style={{ fontSize: 16 }}>Market sizing — UK (annual revenue)</span>
+            <span className="fs-eyebrow" style={{ fontSize: 16 }}>Market sizing, UK (annual revenue)</span>
             <div className="grid grid-cols-2 gap-4 flex-1 min-h-0">
               <div className="flex items-center justify-center min-h-0">
                 <TamSamSomCircles />
@@ -130,7 +130,7 @@ export default function Slide04Market() {
               </div>
               <span className="fs-stat" style={{ fontSize: 56, color: 'hsl(var(--slide-accent))' }}>1 → 5</span>
               <span style={{ fontSize: 17, color: 'hsl(var(--slide-gray-700))', lineHeight: 1.35 }}>
-                Growth is <strong>organic and viral</strong> — every pod requires inviting 3–8 friends. Each new user
+                Growth is <strong>organic and viral</strong>: every pod requires inviting 3–8 friends, so each new user
                 becomes a recruiter.
               </span>
             </div>
