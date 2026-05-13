@@ -4,7 +4,7 @@ import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
 export default function Slide02Vision() {
   return (
     <MSSlideLayout variant="default">
-      <div className="grid grid-cols-12 gap-12 h-full px-20 py-16">
+      <div className="grid grid-cols-12 gap-10 h-full px-20 py-16">
         <div className="col-span-5 flex flex-col justify-center gap-8">
           <span className="fs-eyebrow">01 · Vision</span>
           <div className="flex flex-col gap-3">
@@ -13,7 +13,7 @@ export default function Slide02Vision() {
           </div>
           <div className="flex flex-col gap-3">
             <span style={{ fontSize: 24, color: 'hsl(var(--slide-gray-500))' }}>Building</span>
-            <span className="fs-stat" style={{ fontSize: 80, color: 'hsl(var(--slide-accent))' }}>FORFEITNESS</span>
+            <span className="fs-stat" style={{ fontSize: 56, color: 'hsl(var(--slide-accent))', letterSpacing: '-0.02em' }}>FORFEITNESS</span>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
-import { Check, ArrowUpRight } from 'lucide-react';
+import { Check } from 'lucide-react';
 
 function PhoneMock() {
   return (
@@ -91,19 +91,19 @@ function PhoneMock() {
 
 export default function Slide05Progress() {
   return (
-    <MSSlideLayout variant="dark">
+    <MSSlideLayout variant="default">
       <div className="grid grid-cols-12 gap-12 h-full px-20 py-14 items-center">
         <div className="col-span-5 flex justify-center">
           <PhoneMock />
         </div>
 
         <div className="col-span-7 flex flex-col gap-8">
-          <span className="fs-eyebrow" style={{ color: 'hsl(var(--slide-accent-light))' }}>05 · Progress</span>
-          <h2 className="text-white" style={{ fontSize: 80, lineHeight: 1.0 }}>
+          <span className="fs-eyebrow">05 · Progress</span>
+          <h2 style={{ fontSize: 80, lineHeight: 1.0, color: 'hsl(var(--slide-gray-900))' }}>
             Already built.<br />
-            <span style={{ color: 'hsl(var(--slide-accent-light))' }}>Already tested.</span>
+            <span style={{ color: 'hsl(var(--slide-accent))' }}>Already tested.</span>
           </h2>
-          <p className="text-white/75" style={{ fontSize: 24, lineHeight: 1.4, maxWidth: 700 }}>
+          <p style={{ fontSize: 24, lineHeight: 1.4, maxWidth: 700, color: 'hsl(var(--slide-gray-600))' }}>
             A working clickable prototype, a shipped design system, and core user flows pressure-tested
             with real friend groups.
           </p>
@@ -112,25 +112,22 @@ export default function Slide05Progress() {
             {[
               { stat: '6', label: 'Core screens shipped', sub: 'Home · Pod · Feed · Profile · Reveal · Log' },
               { stat: '1', label: 'Live prototype', sub: 'Clickable iOS UI kit' },
-              { stat: '12', label: 'Weeks of build', sub: 'Solo design + dev' },
+              { stat: '4', label: 'Weeks of build', sub: 'Solo design + dev' },
             ].map((c) => (
-              <div key={c.label} className="fs-card-dark" style={{ padding: 20 }}>
-                <span className="fs-stat" style={{ fontSize: 72, color: 'hsl(var(--slide-accent-light))' }}>{c.stat}</span>
-                <div style={{ fontSize: 22, fontWeight: 700, marginTop: 4 }}>{c.label}</div>
-                <div style={{ fontSize: 18, color: 'rgba(255,255,255,0.6)', marginTop: 4 }}>{c.sub}</div>
+              <div key={c.label} className="fs-card" style={{ padding: 20 }}>
+                <span className="fs-stat" style={{ fontSize: 72, color: 'hsl(var(--slide-accent))' }}>{c.stat}</span>
+                <div style={{ fontSize: 22, fontWeight: 700, marginTop: 4, color: 'hsl(var(--slide-gray-900))' }}>{c.label}</div>
+                <div style={{ fontSize: 18, color: 'hsl(var(--slide-gray-500))', marginTop: 4 }}>{c.sub}</div>
               </div>
             ))}
           </div>
 
           <div className="flex flex-wrap gap-3 pt-2">
             {['Design system shipped', 'User flows tested', 'Brand identity defined'].map((t) => (
-              <span key={t} className="fs-pill" style={{ background: 'hsl(var(--slide-accent) / 0.18)', color: 'hsl(var(--slide-accent-light))' }}>
+              <span key={t} className="fs-pill">
                 <Check className="w-5 h-5" /> {t}
               </span>
             ))}
-            <span className="fs-pill" style={{ background: 'rgba(255,255,255,0.08)', color: '#fff' }}>
-              See live prototype <ArrowUpRight className="w-5 h-5" />
-            </span>
           </div>
         </div>
       </div>
