@@ -59,16 +59,16 @@ export default function Slide06BusinessModel() {
             <span className="fs-eyebrow">Growth engine</span>
             <div className="grid grid-cols-2 gap-5 flex-1 min-h-0">
               {channels.map(({ icon: Icon, title, body }, i) => (
-                <div key={title} className="fs-card flex flex-col justify-between" style={{ padding: 28 }}>
+                <div key={title} className="fs-card flex flex-col gap-4" style={{ padding: 32 }}>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center justify-center rounded-2xl" style={{ width: 64, height: 64, background: 'hsl(var(--slide-accent-muted))' }}>
-                      <Icon className="w-8 h-8" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
+                    <div className="flex items-center justify-center rounded-2xl" style={{ width: 72, height: 72, background: 'hsl(var(--slide-accent-muted))' }}>
+                      <Icon className="w-9 h-9" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
                     </div>
-                    <span className="fs-stat" style={{ fontSize: 44, color: 'hsl(var(--slide-gray-300))' }}>0{i + 1}</span>
+                    <span className="fs-stat" style={{ fontSize: 52, color: 'hsl(var(--slide-gray-300))' }}>0{i + 1}</span>
                   </div>
-                  <div className="flex flex-col gap-2 mt-4">
-                    <div style={{ fontSize: 28, fontWeight: 700, color: 'hsl(var(--slide-gray-900))' }}>{title}</div>
-                    <div style={{ fontSize: 19, color: 'hsl(var(--slide-gray-600))', lineHeight: 1.4 }}>{body}</div>
+                  <div className="flex flex-col gap-2">
+                    <div style={{ fontSize: 32, fontWeight: 700, color: 'hsl(var(--slide-gray-900))', lineHeight: 1.1 }}>{title}</div>
+                    <div style={{ fontSize: 22, color: 'hsl(var(--slide-gray-600))', lineHeight: 1.4 }}>{body}</div>
                   </div>
                 </div>
               ))}
