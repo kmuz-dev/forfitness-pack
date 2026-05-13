@@ -29,7 +29,7 @@ export function MSSlideLayout({ children, variant = 'default', className }: MSSl
       )}
     >
       {/* Logo mark - Top Right */}
-      <div className="absolute top-8 right-10 z-10">
+      <div className="absolute top-10 right-12 z-10">
         <LogoMark variant={isDark ? 'light' : 'dark'} />
       </div>
       
