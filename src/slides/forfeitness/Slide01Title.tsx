@@ -15,7 +15,7 @@ export default function Slide01Title() {
               fontFamily: 'Syne, sans-serif',
               fontWeight: 800,
               letterSpacing: '-0.03em',
-              fontSize: 184,
+              fontSize: 148,
               lineHeight: 0.9,
               color: 'hsl(var(--slide-gray-900))',
             }}
@@ -41,7 +41,7 @@ export default function Slide01Title() {
         <div className="flex items-end justify-between">
           <div className="flex flex-col gap-2">
             <span style={{ fontSize: 22, color: 'hsl(var(--slide-gray-500))' }}>Founder</span>
-            <span style={{ fontSize: 28, fontWeight: 600, color: 'hsl(var(--slide-gray-900))' }}>Your Name</span>
+            <span style={{ fontSize: 28, fontWeight: 600, color: 'hsl(var(--slide-gray-900))' }}>Kudakwashe Mutasa</span>
           </div>
           <div className="fs-pill" style={{ background: 'hsl(var(--slide-accent))', color: '#fff', fontSize: 28, padding: '14px 28px' }}>
             <span className="fs-stat" style={{ fontSize: 32 }}>£15</span>

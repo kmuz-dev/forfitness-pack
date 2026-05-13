@@ -9,7 +9,7 @@ export default function Slide02Vision() {
           <span className="fs-eyebrow">01 · Vision</span>
           <div className="flex flex-col gap-3">
             <span style={{ fontSize: 24, color: 'hsl(var(--slide-gray-500))' }}>Founder</span>
-            <span className="fs-stat" style={{ fontSize: 56, color: 'hsl(var(--slide-gray-900))' }}>Your Name</span>
+            <span className="fs-stat" style={{ fontSize: 48, color: 'hsl(var(--slide-gray-900))' }}>Kudakwashe Mutasa</span>
           </div>
           <div className="flex flex-col gap-3">
             <span style={{ fontSize: 24, color: 'hsl(var(--slide-gray-500))' }}>Building</span>
@@ -20,8 +20,8 @@ export default function Slide02Vision() {
         <div className="col-span-7 flex flex-col justify-center gap-10 border-l pl-12" style={{ borderColor: 'hsl(var(--slide-gray-200))' }}>
           <span className="fs-eyebrow">One-line vision</span>
           <h2 style={{ fontSize: 64, lineHeight: 1.1, color: 'hsl(var(--slide-gray-900))' }}>
-            A weekly fitness pact between mates —{' '}
-            <span style={{ color: 'hsl(var(--slide-accent))' }}>backed by money</span> —
+            A weekly fitness pact between mates,{' '}
+            <span style={{ color: 'hsl(var(--slide-accent))' }}>backed by money</span>,
             so showing up beats skipping out.
           </h2>
           <div className="flex flex-wrap gap-4 pt-4">

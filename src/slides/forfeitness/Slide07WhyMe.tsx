@@ -14,22 +14,22 @@ export default function Slide07WhyMe() {
         </div>
 
         <div className="grid grid-cols-2 gap-8 flex-1 min-h-0">
-          {/* Why me - fills full height */}
-          <div className="fs-card flex flex-col justify-between" style={{ padding: 36 }}>
-            <span className="fs-eyebrow" style={{ fontSize: 16 }}>Why me</span>
+          {/* Why me */}
+          <div className="fs-card flex flex-col gap-6 justify-center" style={{ padding: 44 }}>
+            <span className="fs-eyebrow" style={{ fontSize: 18 }}>Why me</span>
             {[
               { icon: GraduationCap, title: "Master's in Digital Transformation", body: 'Trained to ship technology-led change.' },
               { icon: Briefcase, title: 'Undergraduate degree in Business', body: 'Commercial fluency: pricing, growth, ops.' },
               { icon: Wrench, title: 'Built the prototype solo', body: 'From brand to working iOS UI in 4 weeks.' },
               { icon: Heart, title: 'I am the customer', body: 'Urban 20s, gym member, lived the skip cycle.' },
             ].map(({ icon: Icon, title, body }) => (
-              <div key={title} className="flex items-start gap-4">
-                <div className="flex items-center justify-center rounded-2xl flex-shrink-0" style={{ width: 64, height: 64, background: 'hsl(var(--slide-accent-muted))' }}>
-                  <Icon className="w-8 h-8" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
+              <div key={title} className="flex items-start gap-5">
+                <div className="flex items-center justify-center rounded-2xl flex-shrink-0" style={{ width: 72, height: 72, background: 'hsl(var(--slide-accent-muted))' }}>
+                  <Icon className="w-9 h-9" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
                 </div>
-                <div className="flex flex-col">
-                  <span style={{ fontSize: 26, fontWeight: 700, color: 'hsl(var(--slide-gray-900))' }}>{title}</span>
-                  <span style={{ fontSize: 20, color: 'hsl(var(--slide-gray-600))' }}>{body}</span>
+                <div className="flex flex-col gap-1">
+                  <span style={{ fontSize: 30, fontWeight: 700, color: 'hsl(var(--slide-gray-900))', lineHeight: 1.1 }}>{title}</span>
+                  <span style={{ fontSize: 22, color: 'hsl(var(--slide-gray-600))', lineHeight: 1.35 }}>{body}</span>
                 </div>
               </div>
             ))}
@@ -37,16 +37,17 @@ export default function Slide07WhyMe() {
 
           {/* Why now + support */}
           <div className="flex flex-col gap-5">
-            <div className="fs-card flex flex-col gap-4 flex-1" style={{ padding: 32 }}>
-              <span className="fs-eyebrow" style={{ fontSize: 16 }}>Why now</span>
+            <div className="fs-card flex flex-col gap-5 justify-center flex-1" style={{ padding: 40 }}>
+              <span className="fs-eyebrow" style={{ fontSize: 18 }}>Why now</span>
               {[
-                'Wearables are ubiquitous — verification is finally trivial.',
-                'Post-pandemic accountability gap — solo habits are fragile.',
-                'Gen Z is comfortable mixing money, social, and health.',
+                'Wearables are ubiquitous, so verification is finally trivial.',
+                'A digitally native generation lives inside smart watches and tracks every workout.',
+                'Health-conscious culture spans Gen Z and beyond; fitness is identity.',
+                'Comfort mixing money, social, and health unlocks new product shapes.',
               ].map((t) => (
-                <div key={t} className="flex items-start gap-3">
-                  <Check className="w-7 h-7 flex-shrink-0 mt-1" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={3} />
-                  <span style={{ fontSize: 22, color: 'hsl(var(--slide-gray-800))', lineHeight: 1.35 }}>{t}</span>
+                <div key={t} className="flex items-start gap-4">
+                  <Check className="w-8 h-8 flex-shrink-0 mt-1" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={3} />
+                  <span style={{ fontSize: 24, color: 'hsl(var(--slide-gray-800))', lineHeight: 1.3 }}>{t}</span>
                 </div>
               ))}
             </div>
