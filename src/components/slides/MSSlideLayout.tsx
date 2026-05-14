@@ -58,15 +58,15 @@ export function LogoMark({ variant = 'dark', className }: LogoMarkProps) {
   return (
     <svg
       viewBox="0 0 200 28"
-      className={cn('h-6 w-auto', className)}
+      className={cn('h-[22px] w-auto', className)}
       fill={color}
       preserveAspectRatio="xMaxYMid meet"
     >
       <text
         x="0"
-        y="22"
+        y="20"
         fontFamily="Syne, 'Plus Jakarta Sans', sans-serif"
-        fontSize="20"
+        fontSize="18"
         fontWeight="800"
         letterSpacing="0.04em"
       >
