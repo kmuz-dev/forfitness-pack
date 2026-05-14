@@ -8,39 +8,42 @@ interface MSSlideLayoutProps {
   className?: string;
 }
 
-/**
- * Slide Layout Component
- * Inspired by IBM Carbon Design System
- * 
- * Variants:
- * - default: White background, dark text
- * - dark/title: Deep navy background, white text
- */
 export function MSSlideLayout({ children, variant = 'default', className }: MSSlideLayoutProps) {
   const isDark = variant === 'dark' || variant === 'title';
-  
+
   return (
-    <div 
+    <div
       className={cn(
-        'w-full h-full relative font-sans slide-content',
-        isDark 
-          ? 'bg-slide-primary text-white' 
+        'w-full h-full relative font-sans slide-content overflow-hidden',
+        isDark
+          ? 'bg-slide-primary text-white'
           : 'bg-[#FCFBF8] text-slide-gray-900',
         className
       )}
     >
-      {/* Logo mark - Top Right */}
-      <div className="absolute top-10 right-20 z-10">
-        <LogoMark variant={isDark ? 'light' : 'dark'} />
-      </div>
-      
+      {/* Decorative oversized logo watermark - bottom right */}
+      <img
+        src={logoMark}
+        alt=""
+        aria-hidden="true"
+        className="absolute pointer-events-none select-none z-0"
+        style={{
+          right: -120,
+          bottom: -80,
+          width: 720,
+          height: 'auto',
+          opacity: 0.05,
+          filter: isDark ? 'brightness(0) invert(1)' : undefined,
+        }}
+      />
+
       {/* Content */}
-      <div className="w-full h-full">
+      <div className="relative w-full h-full z-10">
         {children}
       </div>
-      
+
       {/* Bottom accent bar */}
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-slide-accent" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-slide-accent z-10" />
     </div>
   );
 }
@@ -50,9 +53,6 @@ interface LogoMarkProps {
   className?: string;
 }
 
-/**
- * Minimal logo mark - can be customized per brand
- */
 export function LogoMark({ variant = 'dark', className }: LogoMarkProps) {
   return (
     <img
@@ -64,5 +64,4 @@ export function LogoMark({ variant = 'dark', className }: LogoMarkProps) {
   );
 }
 
-// Re-export with legacy name for backwards compatibility
 export const MSLogo = LogoMark;
