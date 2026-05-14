@@ -25,12 +25,7 @@ export default function Slide01Title() {
           <span className="fs-eyebrow">Pitch Deck · 2026</span>
         </div>
 
-        <div className="flex items-center gap-10 relative z-10">
-          <img
-            src={logo}
-            alt="Forfeitness logo"
-            style={{ width: 260, height: 'auto', flexShrink: 0 }}
-          />
+        <div className="flex items-center relative z-10">
           <div className="flex flex-col gap-8 flex-1 min-w-0">
             <h1
               style={{
@@ -39,24 +34,24 @@ export default function Slide01Title() {
                 letterSpacing: '-0.03em',
                 fontSize: 133,
                 lineHeight: 0.9,
-                color: 'hsl(var(--slide-gray-900))',
+                color: 'hsl(var(--fs-lime))',
               }}
             >
-              FORFEIT<span style={{ color: 'hsl(var(--slide-accent))' }}>NESS</span>
+              FORFEITNESS
             </h1>
             <div className="fs-divider-lime" />
             <p
               className="max-w-5xl"
               style={{
-                fontSize: 58,
-                lineHeight: 1.15,
+                fontSize: 44,
+                lineHeight: 1.2,
                 fontWeight: 600,
                 color: 'hsl(var(--slide-gray-800))',
                 fontFamily: 'Syne, sans-serif',
                 letterSpacing: '-0.02em',
               }}
             >
-              Skipping the gym should cost something.
+              A high-growth fitness app that leverages loss aversion and peer pressure so users consistently hit their goals, by putting their money where their mouth is.
             </p>
           </div>
         </div>
@@ -65,10 +60,6 @@ export default function Slide01Title() {
           <div className="flex flex-col gap-2">
             <span style={{ fontSize: 22, color: 'hsl(var(--slide-gray-500))' }}>Founder</span>
             <span style={{ fontSize: 28, fontWeight: 600, color: 'hsl(var(--slide-gray-900))' }}>Kudakwashe Mutasa</span>
-          </div>
-          <div className="fs-pill" style={{ background: 'hsl(var(--slide-accent))', color: '#fff', fontSize: 28, padding: '14px 28px' }}>
-            <span className="fs-stat" style={{ fontSize: 32 }}>£15</span>
-            <span style={{ fontWeight: 500 }}>weekly stake</span>
           </div>
         </div>
       </div>

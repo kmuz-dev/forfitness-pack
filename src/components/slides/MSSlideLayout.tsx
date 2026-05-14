@@ -1,5 +1,6 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
+import logoMark from '@/assets/forfeitness-logo.png';
 
 interface MSSlideLayoutProps {
   children: React.ReactNode;
@@ -53,26 +54,13 @@ interface LogoMarkProps {
  * Minimal logo mark - can be customized per brand
  */
 export function LogoMark({ variant = 'dark', className }: LogoMarkProps) {
-  const color = variant === 'light' ? 'hsl(var(--slide-gray-100))' : 'hsl(var(--slide-primary))';
-  
   return (
-    <svg
-      viewBox="0 0 200 28"
-      className={cn('h-[22px] w-auto', className)}
-      fill={color}
-      preserveAspectRatio="xMaxYMid meet"
-    >
-      <text
-        x="0"
-        y="20"
-        fontFamily="Syne, 'Plus Jakarta Sans', sans-serif"
-        fontSize="18"
-        fontWeight="800"
-        letterSpacing="0.04em"
-      >
-        FORFEITNESS
-      </text>
-    </svg>
+    <img
+      src={logoMark}
+      alt="Forfeitness"
+      className={cn('h-12 w-auto object-contain', className)}
+      style={variant === 'light' ? { filter: 'brightness(0) invert(1)' } : undefined}
+    />
   );
 }
 
