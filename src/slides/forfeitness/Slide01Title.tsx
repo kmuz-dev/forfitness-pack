@@ -34,7 +34,7 @@ export default function Slide01Title() {
                 letterSpacing: '-0.03em',
                 fontSize: 133,
                 lineHeight: 0.9,
-                color: 'hsl(var(--fs-lime))',
+                color: 'hsl(var(--slide-accent))',
               }}
             >
               FORFEITNESS
