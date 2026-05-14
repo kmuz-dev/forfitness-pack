@@ -35,7 +35,7 @@ export default function Slide01Title() {
                 letterSpacing: '-0.02em',
               }}
             >
-              A high-growth fitness app that leverages loss aversion and peer pressure so users consistently hit their goals, by putting their money where their mouth is.
+              Pledge your money. Hit your target. Earn it—or hand it to your mates.
             </p>
           </div>
         </div>
