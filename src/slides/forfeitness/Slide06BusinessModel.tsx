@@ -1,12 +1,12 @@
 import React from 'react';
 import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
-import { Megaphone, Users, Building2, Activity } from 'lucide-react';
+import { Share2, Mic2, Building2, HeartPulse } from 'lucide-react';
 
 const channels = [
-  { icon: Megaphone, title: 'Organic social', body: 'TikTok + Instagram UGC, relatable "skip" content drives top of funnel.' },
-  { icon: Users, title: 'Founder-seeded pods', body: 'Hand-picked friend groups in London and Manchester to seed the network.' },
-  { icon: Building2, title: 'Gyms & run clubs', body: 'Partnerships, in-app referral codes, branded leaderboards.' },
-  { icon: Activity, title: 'Strava / Apple Health', body: 'Distribution inside apps users already open daily.' },
+  { icon: Share2, title: 'Product Virality', body: 'Onboarding share mechanics & pod invite loops built into core UX.' },
+  { icon: Mic2, title: 'Fitness Influencers', body: 'Micro-ambassador seeding via TikTok creators, gym influencers, Strava athletes.' },
+  { icon: Building2, title: 'Corporate Wellness', body: 'B2B2C partnerships unlock enterprise wellness programs as distribution channel.' },
+  { icon: HeartPulse, title: 'Strava / Apple Health', body: 'Embedded referral hooks inside existing daily-use fitness platforms.' },
 ];
 
 export default function Slide06BusinessModel() {
@@ -72,6 +72,9 @@ export default function Slide06BusinessModel() {
                   </div>
                 </div>
               ))}
+            </div>
+            <div style={{ fontSize: 22, color: 'hsl(var(--slide-gray-600))', textAlign: 'center', paddingTop: 8 }}>
+              The product has growth mechanics embedded within it.
             </div>
           </div>
         </div>
