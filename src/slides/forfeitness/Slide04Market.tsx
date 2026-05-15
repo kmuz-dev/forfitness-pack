@@ -88,12 +88,18 @@ export default function Slide04Market() {
                   of UK adults<br />own a smart wearable (2025)
                 </span>
               </div>
+              <div className="flex items-center justify-between mt-2 mb-1">
+                <span style={{ fontSize: 14, color: 'hsl(var(--slide-gray-500))', textTransform: 'uppercase', letterSpacing: 1 }}>% of UK adults owning a wearable</span>
+              </div>
               <div className="flex-1" style={{ minHeight: 0 }}>
                 <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={wearables} margin={{ top: 6, right: 12, bottom: 6, left: -12 }}>
-                    <XAxis dataKey="y" tick={{ fontSize: 13, fill: 'hsl(var(--slide-gray-500))' }} axisLine={false} tickLine={false} />
-                    <YAxis hide domain={[0, 60]} />
-                    <Line type="monotone" dataKey="v" stroke="hsl(var(--slide-accent))" strokeWidth={4} dot={{ r: 4, fill: 'hsl(var(--slide-accent))' }} />
+                  <LineChart data={wearables} margin={{ top: 12, right: 16, bottom: 8, left: 4 }}>
+                    <CartesianGrid stroke="hsl(var(--slide-gray-200))" strokeDasharray="3 3" vertical={false} />
+                    <XAxis dataKey="y" tick={{ fontSize: 16, fill: 'hsl(var(--slide-gray-600))' }} axisLine={false} tickLine={false} tickFormatter={(v) => `'${v}`} />
+                    <YAxis tick={{ fontSize: 14, fill: 'hsl(var(--slide-gray-500))' }} axisLine={false} tickLine={false} domain={[0, 60]} tickFormatter={(v) => `${v}%`} width={42} />
+                    <Line type="monotone" dataKey="v" stroke="hsl(var(--slide-accent))" strokeWidth={4} dot={{ r: 5, fill: 'hsl(var(--slide-accent))' }}>
+                      <LabelList dataKey="v" position="top" formatter={(v: number) => `${v}%`} style={{ fontSize: 14, fontWeight: 700, fill: 'hsl(var(--slide-gray-700))' }} />
+                    </Line>
                   </LineChart>
                 </ResponsiveContainer>
               </div>
