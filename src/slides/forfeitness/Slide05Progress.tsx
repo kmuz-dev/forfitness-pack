@@ -101,11 +101,10 @@ export default function Slide05Progress() {
           <span className="fs-eyebrow">05 · Progress</span>
           <h2 style={{ fontSize: 80, lineHeight: 1.0, color: 'hsl(var(--slide-gray-900))' }}>
             Already built.<br />
-            <span style={{ color: 'hsl(var(--slide-accent))' }}>Already tested.</span>
+            <span style={{ color: 'hsl(var(--slide-accent))' }}>Already validated.</span>
           </h2>
           <p style={{ fontSize: 24, lineHeight: 1.4, maxWidth: 700, color: 'hsl(var(--slide-gray-600))' }}>
-            A working clickable prototype, a shipped design system, and core user flows pressure-tested
-            with real friend groups.
+            Target users confirmed demand. Core mechanic tested and approved through user research.
           </p>
 
           <div className="grid grid-cols-3 gap-5">
