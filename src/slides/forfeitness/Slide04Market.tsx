@@ -1,6 +1,6 @@
 import React from 'react';
 import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
-import { LineChart, Line, BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, ResponsiveContainer, LabelList } from 'recharts';
 import { Watch, Users, Sparkles, Network } from 'lucide-react';
 
 const wearables = [
