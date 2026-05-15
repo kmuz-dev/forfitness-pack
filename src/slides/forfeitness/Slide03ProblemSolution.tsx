@@ -80,29 +80,29 @@ export default function Slide03ProblemSolution() {
             <span style={{ color: 'hsl(var(--slide-accent))' }}>You actually show up.</span>
           </h2>
 
-          <div className="flex flex-col gap-4 pt-2">
+          <div className="flex flex-col gap-5 pt-2 flex-1 justify-center">
             {[
               { icon: Users, title: 'Form a pod', body: '3–8 mates who know each other.' },
               { icon: PoundSterling, title: 'Stake £15/wk', body: 'Real money on a weekly target.' },
               { icon: Trophy, title: 'Hit target → keep £', body: 'Miss → your stake splits among hitters.' },
             ].map(({ icon: Icon, title, body }, i) => (
-              <div key={title} className="fs-card flex items-center gap-5" style={{ padding: 18 }}>
-                <div className="flex items-center justify-center rounded-2xl" style={{ width: 64, height: 64, background: 'hsl(var(--slide-accent-muted))' }}>
-                  <Icon className="w-8 h-8" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
+              <div key={title} className="fs-card flex items-center gap-6" style={{ padding: 24 }}>
+                <div className="flex items-center justify-center rounded-2xl shrink-0" style={{ width: 76, height: 76, background: 'hsl(var(--slide-accent-muted))' }}>
+                  <Icon className="w-9 h-9" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
                 </div>
                 <div className="flex flex-col">
-                  <span style={{ fontSize: 24, fontWeight: 700, color: 'hsl(var(--slide-gray-900))' }}>{i + 1}. {title}</span>
-                  <span style={{ fontSize: 20, color: 'hsl(var(--slide-gray-600))' }}>{body}</span>
+                  <span style={{ fontSize: 28, fontWeight: 700, color: 'hsl(var(--slide-gray-900))' }}>{i + 1}. {title}</span>
+                  <span style={{ fontSize: 22, color: 'hsl(var(--slide-gray-600))' }}>{body}</span>
                 </div>
               </div>
             ))}
           </div>
 
-          <div className="flex items-center gap-6 mt-2">
+          <div className="fs-card flex items-center gap-6 mt-2" style={{ padding: 20 }}>
             <ProgressRing pct={1} />
             <div className="flex flex-col gap-2">
-              <span style={{ fontSize: 28, fontWeight: 700, color: 'hsl(var(--slide-gray-900))' }}>Verified weekly.</span>
-              <span style={{ fontSize: 20, color: 'hsl(var(--slide-gray-600))' }}>
+              <span style={{ fontSize: 36, fontWeight: 700, color: 'hsl(var(--slide-gray-900))' }}>Verified weekly.</span>
+              <span style={{ fontSize: 24, color: 'hsl(var(--slide-gray-600))', lineHeight: 1.35 }}>
                 Auto-sync via Strava, Apple Health, Google Fit. Photo proof for the social layer.
               </span>
             </div>
