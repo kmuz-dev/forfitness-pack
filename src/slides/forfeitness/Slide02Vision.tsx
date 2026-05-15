@@ -19,16 +19,15 @@ export default function Slide02Vision() {
 
         <div className="col-span-7 flex flex-col justify-center gap-10 border-l pl-12" style={{ borderColor: 'hsl(var(--slide-gray-200))' }}>
           <span className="fs-eyebrow">One-line vision</span>
-          <h2 style={{ fontSize: 64, lineHeight: 1.1, color: 'hsl(var(--slide-gray-900))' }}>
-            A weekly fitness pact between mates,{' '}
-            <span style={{ color: 'hsl(var(--slide-accent))' }}>backed by money</span>,
-            so showing up beats skipping out.
+          <h2 style={{ fontSize: 60, lineHeight: 1.1, color: 'hsl(var(--slide-gray-900))' }}>
+            A weekly fitness pact between mates that turns social pressure into skin in the game, because{' '}
+            <span style={{ color: 'hsl(var(--slide-accent))' }}>"I'll go tomorrow" just got expensive.</span>
           </h2>
           <div className="flex flex-wrap gap-4 pt-4">
-            <span className="fs-pill">Social</span>
-            <span className="fs-pill">Accountable</span>
-            <span className="fs-pill">Financial stake</span>
-            <span className="fs-pill">Friend-led</span>
+            <span className="fs-pill">Financial</span>
+            <span className="fs-pill">Behavioral</span>
+            <span className="fs-pill">Accountability</span>
+            <span className="fs-pill">Community</span>
           </div>
         </div>
       </div>
