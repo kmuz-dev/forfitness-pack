@@ -1,11 +1,11 @@
 import React from 'react';
 import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
-import { Share2, Mic2, Building2, HeartPulse } from 'lucide-react';
+import { Share2, Mic2, Handshake, HeartPulse } from 'lucide-react';
 
 const channels = [
   { icon: Share2, title: 'Product Virality', body: 'Onboarding share mechanics & pod invite loops built into core UX.' },
   { icon: Mic2, title: 'Fitness Influencers', body: 'Micro-ambassador seeding via TikTok creators, gym influencers, Strava athletes.' },
-  { icon: Building2, title: 'Corporate Wellness', body: 'B2B2C partnerships unlock enterprise wellness programs as distribution channel.' },
+  { icon: Handshake, title: 'Ecosystem Building', body: 'Collaborate with ClassPass, health tech and wellness platforms to create bundled product offerings. The ecosystem for partnership is wide—and bundling multiplies value for every player.' },
   { icon: HeartPulse, title: 'Strava / Apple Health', body: 'Embedded referral hooks inside existing daily-use fitness platforms.' },
 ];
 
