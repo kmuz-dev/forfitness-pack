@@ -3,7 +3,7 @@ import { MSSlideLayout } from '@/components/slides/MSSlideLayout';
 
 export default function Slide01Title() {
   return (
-    <MSSlideLayout variant="default">
+    <MSSlideLayout variant="default" logoPosition="center">
       <div className="flex flex-col h-full px-20 py-16 justify-between relative">
         <div className="flex items-center gap-4 relative z-10">
           <span className="fs-eyebrow">Pitch Deck · 2026</span>

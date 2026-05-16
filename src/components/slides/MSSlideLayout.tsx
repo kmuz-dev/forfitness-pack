@@ -6,10 +6,31 @@ interface MSSlideLayoutProps {
   children: React.ReactNode;
   variant?: 'default' | 'title' | 'dark';
   className?: string;
+  logoPosition?: 'bottom-right' | 'center';
 }
 
-export function MSSlideLayout({ children, variant = 'default', className }: MSSlideLayoutProps) {
+export function MSSlideLayout({ children, variant = 'default', className, logoPosition = 'bottom-right' }: MSSlideLayoutProps) {
   const isDark = variant === 'dark' || variant === 'title';
+
+  const logoStyle: React.CSSProperties =
+    logoPosition === 'center'
+      ? {
+          left: '50%',
+          top: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 960,
+          height: 'auto',
+          opacity: 0.06,
+          filter: isDark ? 'brightness(0) invert(1)' : undefined,
+        }
+      : {
+          right: -120,
+          bottom: -80,
+          width: 720,
+          height: 'auto',
+          opacity: 0.05,
+          filter: isDark ? 'brightness(0) invert(1)' : undefined,
+        };
 
   return (
     <div
@@ -21,20 +42,13 @@ export function MSSlideLayout({ children, variant = 'default', className }: MSSl
         className
       )}
     >
-      {/* Decorative oversized logo watermark - bottom right */}
+      {/* Decorative oversized logo watermark */}
       <img
         src={logoMark}
         alt=""
         aria-hidden="true"
         className="absolute pointer-events-none select-none z-0"
-        style={{
-          right: -120,
-          bottom: -80,
-          width: 720,
-          height: 'auto',
-          opacity: 0.05,
-          filter: isDark ? 'brightness(0) invert(1)' : undefined,
-        }}
+        style={logoStyle}
       />
 
       {/* Content */}
