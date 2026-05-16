@@ -15,21 +15,21 @@ export default function Slide07WhyMe() {
 
         <div className="grid grid-cols-2 gap-8 flex-1 min-h-0">
           {/* Why me */}
-          <div className="fs-card flex flex-col gap-6 justify-center" style={{ padding: 44 }}>
-            <span className="fs-eyebrow" style={{ fontSize: 18 }}>Why me</span>
+          <div className="fs-card flex flex-col gap-8 justify-center" style={{ padding: 52 }}>
+            <span className="fs-eyebrow" style={{ fontSize: 20 }}>Why me</span>
             {[
               { icon: GraduationCap, title: "Master's in Digital Transformation", body: 'Trained to ship technology-led change.' },
               { icon: Briefcase, title: 'Undergraduate degree in Business', body: 'Commercial fluency: pricing, growth, ops.' },
               { icon: Wrench, title: 'Built the prototype solo', body: 'From brand to working iOS UI in 4 weeks.' },
               { icon: Heart, title: 'I am the customer', body: 'Urban 20s, gym member, lived the skip cycle.' },
             ].map(({ icon: Icon, title, body }) => (
-              <div key={title} className="flex items-start gap-5">
-                <div className="flex items-center justify-center rounded-2xl flex-shrink-0" style={{ width: 72, height: 72, background: 'hsl(var(--slide-accent-muted))' }}>
-                  <Icon className="w-9 h-9" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
+              <div key={title} className="flex items-start gap-6">
+                <div className="flex items-center justify-center rounded-2xl flex-shrink-0" style={{ width: 88, height: 88, background: 'hsl(var(--slide-accent-muted))' }}>
+                  <Icon className="w-12 h-12" style={{ color: 'hsl(var(--slide-accent))' }} strokeWidth={2.2} />
                 </div>
-                <div className="flex flex-col gap-1">
-                  <span style={{ fontSize: 30, fontWeight: 700, color: 'hsl(var(--slide-gray-900))', lineHeight: 1.1 }}>{title}</span>
-                  <span style={{ fontSize: 22, color: 'hsl(var(--slide-gray-600))', lineHeight: 1.35 }}>{body}</span>
+                <div className="flex flex-col gap-2">
+                  <span style={{ fontSize: 34, fontWeight: 700, color: 'hsl(var(--slide-gray-900))', lineHeight: 1.1 }}>{title}</span>
+                  <span style={{ fontSize: 24, color: 'hsl(var(--slide-gray-600))', lineHeight: 1.4 }}>{body}</span>
                 </div>
               </div>
             ))}
