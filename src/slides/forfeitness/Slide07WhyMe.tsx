@@ -20,7 +20,7 @@ export default function Slide07WhyMe() {
             {[
               { icon: GraduationCap, title: "Master's in Digital Transformation", body: 'Trained to ship technology-led change.' },
               { icon: Briefcase, title: 'Undergraduate degree in Business', body: 'Commercial fluency: pricing, growth, ops.' },
-              { icon: Wrench, title: 'Built the prototype solo', body: 'From brand to working iOS UI in 4 weeks.' },
+              { icon: Wrench, title: 'Built the prototype solo', body: 'From brand to working iOS UI in 6 weeks.' },
               { icon: Heart, title: 'I am the customer', body: 'Urban 20s, gym member, lived the skip cycle.' },
             ].map(({ icon: Icon, title, body }) => (
               <div key={title} className="flex items-start gap-6">
