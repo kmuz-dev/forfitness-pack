@@ -111,7 +111,7 @@ export default function Slide05Progress() {
             {[
               { stat: '6', label: 'Core screens shipped', sub: 'Home · Pod · Feed · Profile · Reveal · Log' },
               { stat: '1', label: 'Live prototype', sub: 'Clickable iOS UI kit' },
-              { stat: '4', label: 'Weeks of build', sub: 'Solo design + dev' },
+              { stat: '6', label: 'Weeks of build', sub: 'Solo design + dev' },
             ].map((c) => (
               <div key={c.label} className="fs-card" style={{ padding: 20 }}>
                 <span className="fs-stat" style={{ fontSize: 72, color: 'hsl(var(--slide-accent))' }}>{c.stat}</span>
