@@ -18,7 +18,7 @@ export function MSSlideLayout({ children, variant = 'default', className, logoPo
           left: '50%',
           top: '50%',
           transform: 'translate(-50%, -50%)',
-          width: 960,
+          width: 1280,
           height: 'auto',
           opacity: 0.06,
           filter: isDark ? 'brightness(0) invert(1)' : undefined,
